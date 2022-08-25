@@ -1,0 +1,15 @@
+//aqui queria evitar el import, pense que si desde el styles.scss 
+//cargaba las hojas, estas funcionarian de manera global  
+
+@import "base/sizing";
+
+.Encabezado{
+    @include ancho-header;
+    background-color: $color-header;
+    
+    .Encabezado__Nombre{
+        font-family: "Urae_Nium",italic;
+        color: $color-titulo-header;
+        font-size: $size-titulo;
+    }
+}

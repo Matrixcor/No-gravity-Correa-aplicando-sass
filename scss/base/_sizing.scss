@@ -1,0 +1,19 @@
+// establezco los tamaños de las cajas
+@mixin ancho-header{
+    width: 99vw;
+    height: 6em;
+    text-align: center;
+}
+@mixin ancho-gral{
+    width: 99vw;
+    margin: auto;
+    justify-content: center;
+}
+@mixin ancho-contenido{
+    width: 90vw;
+    margin: auto;
+}
+
+// paddings
+$padding-seccion:3vw 0.7vw;
+

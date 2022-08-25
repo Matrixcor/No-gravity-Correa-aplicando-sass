@@ -1,0 +1,64 @@
+.Contenedor--tienda{ //para la parte de la tienda
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.Principal{ //general para las demas paginas
+    @include ancho-gral;
+    .Principal__Buscador{
+        justify-content: center;
+        padding: 10px;
+    }    
+    .Principal__Secciones{
+        width: 99vw;
+        padding: $padding-seccion;
+        background-color: $color-secciones;
+    }
+}
+.Secciones__Titulo{
+    padding-bottom: 1vw;
+}
+.Principal__Secciones--modificacion{
+    padding: $padding-seccion;
+    background-color: $color-secciones-mod;
+}
+.Principal--tienda{
+    width: 77vw;
+    padding-left: 1vw;
+    text-align: center;
+}
+.Principal__Secciones--tienda{
+    padding: 5vw 0.7vw;
+    background-color: $color-secciones;
+}
+.Principal--nosotros{
+    width: 90vw;
+    margin: auto;
+    
+    .Acceso__Imagen{
+        width: 50vw;
+    }
+    .Acceso__Formulario{
+        padding: 0vw 1vw;
+    }
+    .Principal__Texto{
+        font-size: $size-texto-central;
+        text-align: justify;
+    }
+}
+.Principal__Acceso{
+    display: flex;
+    justify-content: center;
+    padding: 2vw 0vw;
+    
+}
+.Secciones__Contenido{
+    @include ancho-contenido;
+    .card{
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: 7px 7px 10px gray; 
+    }
+    .card__titulo{
+        font-family: $font-titulo-card;
+    }
+}
